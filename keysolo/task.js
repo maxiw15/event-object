@@ -20,7 +20,7 @@ class Game {
   registerEvents() {
     //
     const handleKeyDown = (event) => {
-      const enteredCharacter = event.key.toLowerCase();
+      let enteredCharacter = event.key.toLowerCase();
       if (enteredCharacter === this.currentSymbol.textContent.toLowerCase()) {
         this.success();
       } else {
